@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server for the mirror frontend ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddharth200119/SmartMirror.git"
+  },
+  "author": "Siddharth Ramnani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddharth200119/SmartMirror/issues"
+  },
+  "homepage": "https://github.com/siddharth200119/SmartMirror#readme"
+}
