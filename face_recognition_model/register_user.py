@@ -1,9 +1,14 @@
 import cv2
 import json
+import face_recognition
 import os
 
 #register new person
 def register_user(name, frames, file):
+
+    #check if user exists
+    if(os.path.exists(f'people_images/{name}')):
+        return "user exists"
 
     #reading file
     with open(file) as fp:
@@ -15,7 +20,8 @@ def register_user(name, frames, file):
     #dict to append to list of people
     person = {
         "name": name,
-        "faces": []
+        "faces": [],
+        "face_encodings": []
     }
 
     #reading camera feed
@@ -29,9 +35,14 @@ def register_user(name, frames, file):
         rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         cv2.imwrite(str(frame_no) + ".jpg", rgb_frame)
         person["faces"].append("people_images/" + name + "/" + str(frame_no) + ".jpg")
+        face_encoding = face_recognition.face_encodings(rgb_frame)
+        try:
+            person["face_encodings"].append((face_recognition.face_encodings(rgb_frame)[0]).tolist())
+        except:
+            print("No face detected")
         frame_no = frame_no + 1
-
     people.append(person)
+        
 
     os.chdir("../../")
 
@@ -40,3 +51,7 @@ def register_user(name, frames, file):
 
     cam.release()
     cv2.destroyAllWindows()
+
+    return "new user registered successfully"
+
+register_user("seedu", 5, "people.json")
