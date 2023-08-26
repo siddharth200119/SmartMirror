@@ -54,4 +54,4 @@ def register_user(name, frames, file):
 
     return "new user registered successfully"
 
-register_user("pratham", 5, "people.json")
+register_user("siddharth", 5, "people.json")
