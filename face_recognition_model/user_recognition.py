@@ -1,7 +1,5 @@
 import cv2 
 import face_recognition
-import os
-from os import listdir
 import json
 
 def user_recognition(file, image_cv2):

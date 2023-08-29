@@ -53,5 +53,3 @@ def register_user(name, frames, file):
     cv2.destroyAllWindows()
 
     return "new user registered successfully"
-
-register_user("siddharth", 5, "people.json")

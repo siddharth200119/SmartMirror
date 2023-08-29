@@ -1,8 +1,4 @@
-import cv2 
-import face_recognition
-import os
-from os import listdir
-import json
+import cv2
 from user_recognition import user_recognition
 
 cam = cv2.VideoCapture(0)

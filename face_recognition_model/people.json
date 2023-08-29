@@ -1,5 +1,27 @@
 [
     {
         "name": "user1"
+    },
+    {
+        "name": "siddharth",
+        "faces": [
+            "people_images/siddharth/0.jpg",
+            "people_images/siddharth/1.jpg",
+            "people_images/siddharth/2.jpg",
+            "people_images/siddharth/3.jpg",
+            "people_images/siddharth/4.jpg"
+        ],
+        "face_encodings": []
+    },
+    {
+        "name": "sidd",
+        "faces": [
+            "people_images/sidd/0.jpg",
+            "people_images/sidd/1.jpg",
+            "people_images/sidd/2.jpg",
+            "people_images/sidd/3.jpg",
+            "people_images/sidd/4.jpg"
+        ],
+        "face_encodings": []
     }
 ]
