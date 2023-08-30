@@ -12,6 +12,7 @@ def user_recognition(file, image_cv2):
         for person in people:
             if face_recognition.compare_faces([person["face_encodings"][0]], cpm_img_encoding)[0]:
                 return(person['name'])
+            else:
+                continue
     except:
         return("no face detected")
-        
