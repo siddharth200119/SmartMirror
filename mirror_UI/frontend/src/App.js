@@ -1,7 +1,10 @@
 import React from 'react';
-import './App.css'; // Import the CSS file you created
+import './App.css';
 
 function App() {
+
+  //for full screen
+
   const requestFullScreen = () => {
     const rootElement = document.documentElement;
 
@@ -19,10 +22,19 @@ function App() {
   return (
     <div className="App">
       <div className='fullscreen-container'>
-        <button className='fullScreenBtn' onClick={requestFullScreen}>Go Full Screen</button>
+        <div className='horizontal-container'>
+          
+        </div>
+        <div className='vertical-container-div'>
+          <div className='vertical-container'>
+
+          </div>
+          <button className='fullScreenBtn' onClick={requestFullScreen}>Go Full Screen</button>
+          <div className='vertical-container'>
+            
+          </div>
+        </div>
       </div>
-      
-      {/* Your app content */}
     </div>
   );
 }
