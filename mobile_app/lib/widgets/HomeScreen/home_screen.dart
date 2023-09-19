@@ -11,11 +11,12 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int index = 1;
   var pages = [const Center(child: Text("Live Feed")), const Center(child: Text("Home")), const Center(child: Text("To-Do"))];
+  var titles = ["Live Feed", "Smart Mirror", "To-Do List"];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(),
+      appBar: CustomAppBar(title: titles[index]),
       body: pages[index],
       bottomNavigationBar: NavigationBar(
         height: 60,
