@@ -1,24 +1,16 @@
 import React from 'react';
 import './App.css';
+import Home from "./components/Home/Home"
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 
 function App() {
 
   return (
-    <div className="App">
-      <div className='fullscreen-container'>
-        <div className='horizontal-container'>
-          
-        </div>
-        <div className='vertical-container-div'>
-          <div className='vertical-container'>
-
-          </div>
-          <div className='vertical-container'>
-            
-          </div>
-        </div>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
