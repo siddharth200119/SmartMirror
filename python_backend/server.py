@@ -5,9 +5,9 @@ from user_recognition import user_recognition
 
 app = Flask(__name__)
 
-@app.route('/api/register_face', methods=['GET'])
-def register_face():
-    register_user("sidd", 5, "people.json")
+@app.route('/api/register_face/<name>', methods=['GET'])
+def register_face(name):
+    register_user(name, 7, "people.json")
     return 'registered'
 
 @app.route('/api/detect_face', methods=['GET'])
