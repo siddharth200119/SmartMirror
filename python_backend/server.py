@@ -1,9 +1,12 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
+import requests
 import cv2
 from register_user import register_user
 from user_recognition import user_recognition
 
 app = Flask(__name__)
+
+#API
 
 @app.route('/api/register_face/<name>', methods=['GET'])
 def register_face(name):
@@ -23,4 +26,4 @@ def detect_face():
     return "user not recognised"
 
 if __name__ =='__main__':  
-    app.run()  
+    app.run(port = 8080)  
