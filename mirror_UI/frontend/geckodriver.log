@@ -49,3 +49,27 @@ WebDriver BiDi listening on ws://127.0.0.1:52370
 Read port: 52384
 1695615160463	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 DevTools listening on ws://127.0.0.1:52370/devtools/browser/28fa2d38-58b2-44d7-b5ac-5170e84ac82a
+1695615177974	Marionette	INFO	Stopped listening on port 52384
+Dynamically enable window occlusion 1
+1695615420574	geckodriver	INFO	Listening on 127.0.0.1:52652
+1695615423650	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52653" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\siddh\\AppData\\Local\\Temp\\rust_mozprofileWM5Va6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695615424128	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695615424304	Marionette	INFO	Listening on port 52662
+WebDriver BiDi listening on ws://127.0.0.1:52653
+Read port: 52662
+1695615424604	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52653/devtools/browser/2a57d008-a921-468a-b1c9-18d02950b722
+1697205568763	geckodriver	INFO	Listening on 127.0.0.1:62672
+1697205572077	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62673" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\siddh\\AppData\\Local\\Temp\\rust_mozprofileQ1Emgn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697205573180	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1697205573550	Marionette	INFO	Listening on port 62688
+WebDriver BiDi listening on ws://127.0.0.1:62673
+Read port: 62688
+1697205574101	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62673/devtools/browser/4be17924-e67b-4b4b-ba40-263f89196422

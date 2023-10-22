@@ -1,0 +1,30 @@
+1697205715641	geckodriver	INFO	Listening on 127.0.0.1:62819
+1697205718999	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62820" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\siddh\\AppData\\Local\\Temp\\rust_mozprofileUWzx4o"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697205720268	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1697205720708	Marionette	INFO	Listening on port 62830
+WebDriver BiDi listening on ws://127.0.0.1:62820
+Read port: 62830
+1697205721498	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62820/devtools/browser/28082272-64b7-47b0-b403-602c535262d1
+1697205750563	Marionette	INFO	Stopped listening on port 62830
+Dynamically enable window occlusion 1
+1697205750726	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, channelStatus: 2147500036, errorCode: 2, reason: error
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 321))
+1697781543842	geckodriver	INFO	Listening on 127.0.0.1:49649
+1697781546886	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49650" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\siddh\\AppData\\Local\\Temp\\rust_mozprofileTdWZkq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697781547210	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1697781547314	Marionette	INFO	Listening on port 49747
+WebDriver BiDi listening on ws://127.0.0.1:49650
+Read port: 49747
+1697781547449	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49650/devtools/browser/2c0a1d2a-5fce-4715-85cb-9d83182d7e6b
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
+1697781569928	Marionette	INFO	Stopped listening on port 49747
+Dynamically enable window occlusion 1

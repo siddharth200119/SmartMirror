@@ -1,22 +1,10 @@
 import React from 'react';
+import './Home.css'
 
 function Home() {
 
   return (
-    <div className="App">
-      <div className='fullscreen-container'>
-        <div className='horizontal-container'>
-          
-        </div>
-        <div className='vertical-container-div'>
-          <div className='vertical-container'>
-
-          </div>
-          <div className='vertical-container'>
-            
-          </div>
-        </div>
-      </div>
+    <div className="home">
     </div>
   );
 }
