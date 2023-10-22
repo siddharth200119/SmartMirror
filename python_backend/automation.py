@@ -40,4 +40,4 @@ def detect_face():
 
 face = detect_face()
 if (face != None):
-    driver.get(f'http://localhost:3000/{face}')
+    driver.get(f'http://localhost:3000/users/{face}')

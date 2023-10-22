@@ -1,0 +1,85 @@
+.userName{
+    color: white;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    top: -20%;
+    margin-left: 30%; 
+    margin-right: 30%; 
+    width: 40%;
+    text-align: center;
+    font-size: 90px;
+    animation-name: intro_zoomIn, intro_leaveScreen;
+    animation-duration: 1.5s, 2.5s;
+}
+
+@keyframes intro_zoomIn {
+    from {transform: scale(0.5);}
+    to {transform: scale(1);}
+}
+
+@keyframes intro_leaveScreen {
+    0% {top: 25%;}
+    60% {top: 25%;}
+    100% {top: -20%}
+}
+
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation:  intro_fadeIn;
+    animation-duration: 2.5s;
+  }
+  
+  .fullscreen-button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  .horizontal-container{
+    height: 28vh;
+    width: 98vw;
+    margin: 1vh 1vw;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .vertical-container-div{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .vertical-container{
+    height: 68vh;
+    width: 20vw;
+    margin: 0vh 1vw;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @keyframes intro_fadeIn {
+    0% {opacity: 0%;}
+    60% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
