@@ -26,5 +26,3 @@ def alarm(time, userName):
             else:
                 print("alarm!!!")
                 sleep(1)
-
-alarm("12:15:00", "sidd")

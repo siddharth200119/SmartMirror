@@ -3,6 +3,8 @@ import requests
 import cv2
 from register_user import register_user
 from user_recognition import user_recognition
+from alarm import alarm
+import threading
 
 app = Flask(__name__)
 
@@ -16,7 +18,7 @@ def register_face(name):
 @app.route('/api/detect_face', methods=['GET'])
 def detect_face():
     cam = cv2.VideoCapture(0)
-    for i in range(int(request.args.get("frames"))):
+    for i in range(int(request.args.get("frames", default = 10, type = int))):
         check, frame = cam.read()
         user_name = user_recognition("people.json", frame)
         if(user_name != None):
@@ -24,6 +26,12 @@ def detect_face():
         else:
             continue
     return "user not recognised"
+
+@app.route('/api/set_alarm', methods=['GET'])
+def set_alarm():
+    alarmThread = threading.Thread(target=alarm, args=(request.args.get("time"), request.args.get("userName")))
+    alarmThread.start()
+    return("received")
 
 if __name__ =='__main__':  
     app.run(port = 8080)  
