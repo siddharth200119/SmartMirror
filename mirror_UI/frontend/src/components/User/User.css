@@ -4,9 +4,7 @@
     left: 0; 
     right: 0; 
     top: -20%;
-    margin-left: 30%; 
-    margin-right: 30%; 
-    width: 40%;
+    width: 100%;
     text-align: center;
     font-size: 90px;
     animation-name: intro_zoomIn, intro_leaveScreen;
