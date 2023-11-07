@@ -3,7 +3,7 @@
     position: absolute;
     left: 0; 
     right: 0; 
-    top: -20%;
+    top: -30%;
     width: 100%;
     text-align: center;
     font-size: 90px;
@@ -19,7 +19,7 @@
 @keyframes intro_leaveScreen {
     0% {top: 25%;}
     60% {top: 25%;}
-    100% {top: -20%}
+    100% {top: -30%}
 }
 
 .fullscreen-container {
