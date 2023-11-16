@@ -2,6 +2,7 @@ import React from 'react';
 import {useParams} from "react-router-dom"
 import "./User.css"
 import Weather from "../Widgets/Weather/current-weather.js"
+import Clock from '../Widgets/Clock/Clock.js';
 
 function User() {
 
@@ -14,6 +15,7 @@ function User() {
       <div className='fullscreen-container'>
         <div className='horizontal-container'>
           <Weather city={city}/>
+          <Clock />
         </div>
         <div className='vertical-container-div'>
           <div className='vertical-container'>
