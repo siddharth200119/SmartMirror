@@ -3,6 +3,7 @@ import {useParams} from "react-router-dom"
 import "./User.css"
 import Weather from "../Widgets/Weather/current-weather.js"
 import Clock from '../Widgets/Clock/Clock.js';
+import News from '../Widgets/News/News.jsx';
 
 function User() {
 
@@ -16,10 +17,11 @@ function User() {
         <div className='horizontal-container'>
           <Weather city={city}/>
           <Clock />
+          <News preferences = {"tesla"}/>
         </div>
         <div className='vertical-container-div'>
           <div className='vertical-container'>
-
+            <News preferences = {"tesla"}/>
           </div>
           <div className='vertical-container'>
             
