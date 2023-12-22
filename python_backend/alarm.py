@@ -2,6 +2,13 @@ from user_recognition import user_recognition
 import datetime
 from time import sleep
 import cv2
+from playsound import playsound
+import RPi.GPIO as GPIO
+
+alarmsound = "sound.mp3"
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(9, GPIO.OUT)
 
 def alarm(time, userName):
     alarmTime = [int(n) for n in time.split(":")]
@@ -24,5 +31,6 @@ def alarm(time, userName):
                 print("recognized")
                 soundAlarm = False
             else:
-                print("alarm!!!")
-                sleep(1)
+                playsound(alarmsound)
+             
+ 

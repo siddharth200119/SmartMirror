@@ -3,9 +3,17 @@ import os
 import cv2
 import subprocess
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 import time
 from register_user import register_user
 from user_recognition import user_recognition
+import RPi.GPIO as GPIO
+
+#setup GPIO pins
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(11, GPIO.IN)
+GPIO.setup(9, GPIO.OUT)
 
 #start backend flask server
 
@@ -19,13 +27,11 @@ os.chdir(r'../../python_backend/')
 time.sleep(5)
 print('slept')
 
-driver = webdriver.Firefox()
+chrome_options = Options()
+chrome_options.add_experimental_option("detach", True)
+driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver", chrome_options=chrome_options)
 driver.get('http://localhost:3000/')
 driver.fullscreen_window()
-
-#detect motion
-
-#scan faces
 
 def detect_face():
     cam = cv2.VideoCapture(0)
@@ -38,6 +44,21 @@ def detect_face():
             continue
     return None
 
-face = detect_face()
-if (face != None):
-    driver.get(f'http://localhost:3000/users/{face}')
+#detect motion
+while True:
+    PIR = GPIO.input(11)
+    if PIR == 1:
+        face = detect_face()
+        if (face != None):
+            driver.get(f'http://localhost:3000/users/{face}')
+            driver.fullscreen_window()
+            GPIO.output(9, GPIO.HIGH)
+            time.sleep(60)
+        elif(face == None):
+            driver.get(f'http://localhost:3000/')
+            driver.fullscreen_window()
+            GPIO.output(9, GPIO.LOW)
+
+#scan faces
+
+
